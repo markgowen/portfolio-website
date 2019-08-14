@@ -817,7 +817,7 @@ input, select, textarea {
 		}
 
 		#bg {
-			background-size: 1500px auto;
+			background-size: 25% auto;
 			width: 4500px;
 		} }
 
@@ -899,9 +899,10 @@ input, select, textarea {
 		}
 
 		#bg {
-			background-size: 750px auto;
+			background-size: 50% auto;
 			width: 2250px;
-		} }
+		} 
+	}
 
 /* Mobile */
 
@@ -985,10 +986,25 @@ input, select, textarea {
 		}
 
 		#bg {
-			background-size: 300px auto;
+			background-size: 75% auto;
 			width: 900px;
 		}
 
+		.project-content h1 {
+			font: bold;
+			padding: 2% 4%;
+		}
+
+		.project-content p {
+			font-size: 80%;
+			line-height: 2em;
+			padding: 4%;
+		}
+
+		.project1, .project2, .project3 {
+			flex-direction: column;
+		}
+		
 	/* Header */
 
 		#header h1 {
@@ -1083,10 +1099,12 @@ input, select, textarea {
 		}
 
 		#bg {
-			background-size: 412.5px auto;
+			background-size: 60% auto;
 			width: 1237.5px;
 		}
 
+	
+	
 	/* Header */
 
 		#header nav {
@@ -1142,7 +1160,7 @@ input, select, textarea {
 	border-radius: 15px; */
 	padding: 2%;
 	margin: 0 auto;
-	overflow: auto;
+	
 	
 }
 
