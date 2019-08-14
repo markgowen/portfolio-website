@@ -84,7 +84,7 @@ input, select, textarea {
 
 	body {
 		background: #fff;
-		overflow: hidden;
+		overflow: auto;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -715,7 +715,11 @@ input, select, textarea {
 /* Main-Content */
 
 #main-content {
-		background: red;
+		position: relative;
+		text-align: center;
+		top: 10em;
+		width: 100%;
+		margin: 0 auto;
 	}
 
 /* Footer */
@@ -1091,7 +1095,10 @@ input, select, textarea {
 
 /****************************************** Projects CSS ***********************************/
 
-
+.navLink {
+	text-decoration: none;
+	border: none;
+}
 
 #header.projects{
 	-moz-animation: header 1s 2.25s forwards;
@@ -1110,7 +1117,7 @@ input, select, textarea {
 	display: inline-block;
 	position: relative;
 	text-align: center;
-	top: -19em;
+	top: -21em;
 	vertical-align: middle;
 	width: 90%;
 }
@@ -1126,23 +1133,41 @@ input, select, textarea {
 
 .project-content {
 	display: flex;
-	justify-content: center;
-	align-content: center;
-	background: #2f3922;
-	vertical-align: middle;
-	width: 45%;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	width: 50%;
+	/* background-color: #2f3922;
+	border-radius: 15px; */
+	padding: 2%;
+	margin: 0 auto;
+	overflow: auto;
+	
+}
+
+.project-content h1 {
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 300;
+	text-align: left;
+	margin: 0 4%;
+}
+
+.project-content p {
+	color: white;
+	text-align: left;
+	margin: 0 4%;
+}
+
+.project1, .project2, .project3 {
+	display: flex;
+	justify-content: space-around;
+	background-color: #2f3922;
+	border-radius: 15px;
+	margin: 5%;
 	padding: 2%;
 }
-
-.project-content h2 {
-	color: white;
-	font-weight: 300;
-}
-
-.project p {
-	color: white;
-}
-
-* {
+/* * {
 	border: 1px solid black !important;
-}
+} */
